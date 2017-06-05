@@ -1,7 +1,10 @@
-﻿namespace Net.Chdk.Providers.Category
+﻿using Net.Chdk.Model.Category;
+
+namespace Net.Chdk.Providers.Category
 {
     public interface ICategoryProvider
     {
-        string[] GetCategories();
+        string[] GetCategoryNames();
+        CategoryInfo[] GetCategories();
     }
 }
